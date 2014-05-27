@@ -24,4 +24,8 @@ if ($rowcount>0) {
 	# code...
 	header('Location: user.php');
 }
+else {
+
+	header('Location: index.php');
+}
 ?>
