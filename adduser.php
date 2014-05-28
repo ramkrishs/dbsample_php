@@ -6,9 +6,12 @@ session_start();
 // Include database connection settings
 include('dbc.php');
 
-
 //connection string
 $dbc = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+
+if(isset($_POST['fname']))
+{
+
 
 $fname = mysqli_real_escape_string($dbc, $_POST['fname']);
 $lname = mysqli_real_escape_string($dbc, $_POST['lname']);
@@ -22,11 +25,9 @@ $email = mysqli_real_escape_string($dbc, $_POST['emailid']);
 	  die('Error: ' . mysqli_error($dbc));
 	}
 	echo " 1 user details added";
-
-
+}
 
 mysqli_close($dbc);
-
 ?>
 
 
