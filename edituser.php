@@ -50,7 +50,7 @@ if (isset($_POST['update'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign Up your login</title>
+	<title>Edit  User</title>
 	<!-- Local style sheet -->
 	<link rel="stylesheet" href="css/style.css" media="all" />
 	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=no"/>
